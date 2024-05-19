@@ -38,6 +38,20 @@ void generateRandomMatrix(int n, const std::string& filename) {
     std::cout << "Random matrix generated and written to " << filename << std::endl;
 }
 
+int mainGenrateMatrix() {
+    int n;
+    std::string filename;
+
+    std::cout << "Enter matrix dimension (n): ";
+    std::cin >> n;
+    std::cout << "Enter output filename: ";
+    std::cin >> filename;
+
+    generateRandomMatrix(n, filename);
+
+    return 0;
+}
+
 // ******************************************************************************************************************** //
 //common functions
 
@@ -674,14 +688,12 @@ void runMatrixMultiplicationStrassenParallel() {
 int main() {
     // Uncomment the function you want to run
 
-//    generateRandomMatrix(); // you will be prompted to enter the matrix size and filename
+//    mainGenrateMatrix(); // you will be prompted to enter the matrix size and filename
 
 //    runMatrixMultiplication();
 //    runMatrixMultiplicationParallel();
 //    runMatrixMultiplicationDivideAndConquer();
 //    runMatrixMultiplicationDivideAndConquerParallel();
-
-//    runMatrixMultiplicationStrassen();
-    runMatrixMultiplicationStrassenParallel();
+//    runMatrixMultiplicationStrassenParallel(); 
     return 0;
 }
