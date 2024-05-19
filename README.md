@@ -18,7 +18,7 @@ To compile the code, use the following command:
 
 ```sh
 g++ -fopenmp -o matrix_multiplication main.cpp
-
+```
 ## Running the Code
 
 ### 1. Generating a Random Matrix
